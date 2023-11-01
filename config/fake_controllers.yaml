@@ -1,0 +1,81 @@
+controller_list:
+  - name: fake_psm2_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - suj_psm2_J0
+      - suj_psm2_J1
+      - suj_psm2_J2
+      - suj_psm2_J3
+      - suj_psm2_J4
+  - name: fake_EE_psm2_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - psm2_rev_joint
+      - psm2_yaw_joint
+      - psm2_pitch_back_joint
+      - psm2_main_insertion_joint
+      - psm2_tool_roll_joint
+      - psm2_tool_pitch_joint
+      - psm2_tool_yaw_joint
+      - psm2_tool_gripper2_joint
+  - name: fake_psm1_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - suj_psm1_J0
+      - suj_psm1_J1
+      - suj_psm1_J2
+      - suj_psm1_J3
+      - suj_psm1_J4
+  - name: fake_EE_psm1_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - psm1_rev_joint
+      - psm1_yaw_joint
+      - psm1_pitch_back_joint
+      - psm1_main_insertion_joint
+      - psm1_tool_roll_joint
+      - psm1_tool_pitch_joint
+      - psm1_tool_yaw_joint
+      - psm1_tool_gripper2_joint
+  - name: fake_ecm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - suj_ecm_J0
+      - suj_ecm_J1
+      - suj_ecm_J2
+      - suj_ecm_J3
+  - name: fake_EE_ecm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - ecm_yaw_joint
+      - ecm_pitch_front_joint
+      - ecm_main_insertion_joint
+      - ecm_tool_joint
+  - name: fake_psm3_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - suj_psm3_J0
+      - suj_psm3_J1
+      - suj_psm3_J2
+      - suj_psm3_J3
+      - suj_psm3_J4
+  - name: fake_EE_psm3_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - psm3_rev_joint
+      - psm3_yaw_joint
+      - psm3_pitch_back_joint
+      - psm3_main_insertion_joint
+      - psm3_tool_roll_joint
+      - psm3_tool_pitch_joint
+      - psm3_tool_yaw_joint
+      - psm3_tool_gripper2_joint
+initial:  # Define initial robot poses per group
+  - group: psm2
+    pose: psm2_home
+  - group: psm1
+    pose: psm1
+  - group: ecm
+    pose: ecm_home
+  - group: EE_ecm
+    pose: EE_ecm_homepose

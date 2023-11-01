@@ -1,0 +1,645 @@
+psm2_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm2_J0
+    - suj_psm2_J1
+    - suj_psm2_J2
+    - suj_psm2_J3
+    - suj_psm2_J4
+  gains:
+    suj_psm2_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm2_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm2_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm2_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm2_J4:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_psm2_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - psm2_rev_joint
+    - psm2_yaw_joint
+    - psm2_pitch_back_joint
+    - psm2_main_insertion_joint
+    - psm2_tool_roll_joint
+    - psm2_tool_pitch_joint
+    - psm2_tool_yaw_joint
+    - psm2_tool_gripper2_joint
+  gains:
+    psm2_rev_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_pitch_back_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_roll_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_pitch_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_gripper2_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+psm1_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm1_J0
+    - suj_psm1_J1
+    - suj_psm1_J2
+    - suj_psm1_J3
+    - suj_psm1_J4
+  gains:
+    suj_psm1_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J4:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_psm1_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - psm1_rev_joint
+    - psm1_yaw_joint
+    - psm1_pitch_back_joint
+    - psm1_main_insertion_joint
+    - psm1_tool_roll_joint
+    - psm1_tool_pitch_joint
+    - psm1_tool_yaw_joint
+    - psm1_tool_gripper2_joint
+  gains:
+    psm1_rev_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_pitch_back_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_roll_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_pitch_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_gripper2_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+ecm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_ecm_J0
+    - suj_ecm_J1
+    - suj_ecm_J2
+    - suj_ecm_J3
+  gains:
+    suj_ecm_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_ecm_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_ecm_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_ecm_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_ecm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - ecm_yaw_joint
+    - ecm_pitch_front_joint
+    - ecm_main_insertion_joint
+    - ecm_tool_joint
+  gains:
+    ecm_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_pitch_front_joint:
+      p: 0
+      d: 0oint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_pitch_front_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_tool_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+psm3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm3_J0
+    - suj_psm3_J1
+    - suj_psm3_J2
+    - suj_psm3_J3
+      i: 0
+      i_clamp: 0
+    ecm_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_tool_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+psm3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm3_J0
+    - suj_psm3_J1
+    - suj_psm3_J2
+    - suj_psm3_J3
+    - suj_psm3_J4
+  gains:
+    suj_psm3_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J4:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_psm3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - psm3_rev_joint
+    - psm3_yaw_joint
+    - psm3_pitch_back_joint
+    - psm3_main_insertion_joint
+    - psm3_tool_roll_joint
+    - psm3_tool_pitch_joint
+    - psm3_tool_yaw_joint
+    - psm3_tool_gripper2_joint
+  gains:
+    psm3_rev_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_pitch_back_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_roll_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_pitch_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_gripper2_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0EE_psm2_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - psm2_rev_joint
+    - psm2_yaw_joint
+    - psm2_pitch_back_joint
+    - psm2_main_insertion_joint
+    - psm2_tool_roll_joint
+    - psm2_tool_pitch_joint
+    - psm2_tool_yaw_joint
+    - psm2_tool_gripper2_joint
+  gains:
+    psm2_rev_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_pitch_back_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_roll_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_pitch_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm2_tool_gripper2_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+psm1_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm1_J0
+    - suj_psm1_J1
+    - suj_psm1_J2
+    - suj_psm1_J3
+    - suj_psm1_J4
+  gains:
+    suj_psm1_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm1_J4:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_psm1_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - psm1_rev_joint
+    - psm1_yaw_joint
+    - psm1_pitch_back_joint
+    - psm1_main_insertion_joint
+    - psm1_tool_roll_joint
+    - psm1_tool_pitch_joint
+    - psm1_tool_yaw_joint
+    - psm1_tool_gripper2_joint
+  gains:
+    psm1_rev_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_pitch_back_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_roll_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_pitch_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm1_tool_gripper2_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+ecm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_ecm_J0
+    - suj_ecm_J1
+    - suj_ecm_J2
+    - suj_ecm_J3
+  gains:
+    suj_ecm_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_ecm_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_ecm_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_ecm_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_ecm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - ecm_yaw_joint
+    - ecm_pitch_front_joint
+    - ecm_main_insertion_joint
+    - ecm_tool_joint
+  gains:
+    ecm_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_pitch_front_joint:
+      p: 0
+      d: 0oint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_pitch_front_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_tool_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+psm3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm3_J0
+    - suj_psm3_J1
+    - suj_psm3_J2
+    - suj_psm3_J3
+      i: 0
+      i_clamp: 0
+    ecm_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    ecm_tool_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+psm3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - suj_psm3_J0
+    - suj_psm3_J1
+    - suj_psm3_J2
+    - suj_psm3_J3
+    - suj_psm3_J4
+  gains:
+    suj_psm3_J0:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J1:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J2:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J3:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    suj_psm3_J4:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+EE_psm3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - psm3_rev_joint
+    - psm3_yaw_joint
+    - psm3_pitch_back_joint
+    - psm3_main_insertion_joint
+    - psm3_tool_roll_joint
+    - psm3_tool_pitch_joint
+    - psm3_tool_yaw_joint
+    - psm3_tool_gripper2_joint
+  gains:
+    psm3_rev_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_pitch_back_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_main_insertion_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_roll_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_pitch_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_yaw_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
+    psm3_tool_gripper2_joint:
+      p: 0
+      d: 0
+      i: 0
+      i_clamp: 0
